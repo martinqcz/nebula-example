@@ -2,6 +2,10 @@ plugins {
 	id 'java-library'
 }
 
+group = rootProject.group
+version = rootProject.version
+
 dependencies {
 	api project(":sub1")
 }
+

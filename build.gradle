@@ -21,3 +21,4 @@ plugins {
 //	// id 'nebula.publish-verification' version '9.1.1'
 }
 
+group "com.qapil.nebula-demo"
