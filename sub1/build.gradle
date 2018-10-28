@@ -1,0 +1,25 @@
+plugins {
+	id 'java-library'
+
+	id 'nebula.info' version '4.0.3'
+	// id 'nebula.<publishing plugin of your choice>' version '9.1.1'
+	id 'nebula.maven-base-publish' version '9.1.1'
+//	id 'nebula.maven-dependencies' version '9.1.1'
+	// id 'nebula.maven-publish' version '9.1.1'
+	id 'nebula.maven-manifest' version '9.1.1'
+	id 'nebula.maven-resolved-dependencies' version '9.1.1'
+	id 'nebula.maven-scm' version '9.1.1'
+//
+//	id 'nebula.ivy-base-publish' version '9.1.1'
+//	// id 'nebula.ivy-dependencies' version '9.1.1'
+//	// id 'nebula.ivy-publish' version '9.1.1'
+	id 'nebula.ivy-manifest' version '9.1.1'
+	id 'nebula.ivy-resolved-dependencies' version '9.1.1'
+
+//	id 'nebula.compile-api' version '9.1.1'
+//	id 'nebula.javadoc-jar' version '9.1.1'
+	id 'nebula.source-jar' version '9.1.1'
+//	id 'nebula.test-jar' version '9.1.1'
+
+	// id 'nebula.publish-verification' version '9.1.1'
+}
