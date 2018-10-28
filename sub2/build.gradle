@@ -1,5 +1,9 @@
 plugins {
 	id 'java-library'
+	id 'nebula.info' version '4.0.3'
+	id 'nebula.source-jar' version '9.1.1'
+	id 'nebula.maven-publish' version '9.1.1'
+	id 'nebula.ivy-publish' version '9.1.1'
 }
 
 group = rootProject.group
@@ -9,3 +13,9 @@ dependencies {
 	api project(":sub1")
 }
 
+publishing {
+	repositories {
+		ivy { url "$rootDir/../ivy-repo" }
+		maven { url "$rootDir/../mvn-repo" }
+	}
+}
