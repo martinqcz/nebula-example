@@ -7,9 +7,15 @@ group "com.qapil.nebula-demo"
 version = scmVersion.version
 
 scmVersion {
-	
+
 	// tag {
 	// 	prefix = 'example'
 	// }
 	// versionCreator 'versionWithBranch'
+}
+
+allprojects {
+	if (tasks.findByName("publish")) {
+		tasks.publish.dependsOn verifyRelease
+	}
 }
