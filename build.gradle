@@ -7,8 +7,8 @@ group "com.qapil.nebula-demo"
 version = scmVersion.version
 
 scmVersion {
-	tag {
-		prefix = 'example'
-	}
+	// tag {
+	// 	prefix = 'example'
+	// }
 	// versionCreator 'versionWithBranch'
 }
