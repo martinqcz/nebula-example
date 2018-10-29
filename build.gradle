@@ -1,5 +1,8 @@
+//buildscript {
+//	classpath 'pl.allegro.tech.build:axion-release-plugin:1.9.3'
+//}
+//apply from: "$rootDir/gradle/release.gradle"
 plugins {
-	// id 'nebula.release' version '8.0.3'
 	id 'pl.allegro.tech.build.axion-release' version '1.9.3'
 }
 
@@ -13,3 +16,8 @@ scmVersion {
 
 group "com.qapil.nebula-demo"
 version = scmVersion.version
+
+//tasks.withType(Jar) {
+//	preserveFileTimestamps = false
+//	reproducibleFileOrder = true
+//}

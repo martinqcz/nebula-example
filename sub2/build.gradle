@@ -1,6 +1,6 @@
 plugins {
 	id 'java-library'
-	id 'nebula.info' version '4.0.3'
+//	id 'nebula.info' version '4.0.3'
 	id 'nebula.source-jar' version '9.1.1'
 	id 'nebula.maven-publish' version '9.1.1'
 	id 'nebula.ivy-publish' version '9.1.1'
@@ -25,3 +25,8 @@ task currentVersion {
 		println "Project version: " + project.version
 	}
 }
+
+//tasks.withType(Jar) {
+//	preserveFileTimestamps = false
+//	reproducibleFileOrder = true
+//}

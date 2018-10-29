@@ -1,0 +1,15 @@
+// following buildscript dependencies are needed in the calling script
+//		classpath 'pl.allegro.tech.build:axion-release-plugin:1.9.3'
+
+apply plugin: 'pl.allegro.tech.build.axion-release'
+
+scmVersion {
+	ignoreUncommittedChanges = false
+	tag {
+		prefix = 'example'
+	}
+	versionCreator 'versionWithBranch'
+}
+version = scmVersion.version
+
+group "com.qapil.nebula-demo"
