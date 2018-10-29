@@ -1,7 +1,6 @@
 plugins {
 	// id 'nebula.release' version '8.0.3'
 	id 'pl.allegro.tech.build.axion-release' version '1.9.3'
-	// id 'pl.allegro.tech.build.axion-release' version '1.7.1'
 }
 
 scmVersion {
