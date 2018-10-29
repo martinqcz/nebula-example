@@ -15,7 +15,13 @@ dependencies {
 
 publishing {
 	repositories {
-		ivy { url "$rootDir/../ivy-repo" }
-		maven { url "$rootDir/../mvn-repo" }
+		ivy { url getProperty("localIvyRepository") ?: "$rootDir/../ivy-repo" }
+		maven { url getProperty("localMavenRepository") ?: "$rootDir/../mvn-repo" }
+	}
+}
+
+task printVersion {
+	doLast {
+		println "project.version=" + project.version
 	}
 }
