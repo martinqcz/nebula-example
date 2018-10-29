@@ -16,8 +16,8 @@ publishing {
 	}
 }
 
-task printVersion {
+task currentVersion {
 	doLast {
-		println "project.version=" + project.version
+		println "Project version: " + project.version
 	}
 }
