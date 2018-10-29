@@ -6,12 +6,11 @@ plugins {
 scmVersion {
 	ignoreUncommittedChanges = false
 
-	// tag {
-	// 	prefix = 'example'
-	// }
+	tag {
+		prefix = 'example'
+	}
 	// versionCreator 'versionWithBranch'
 }
 
 group "com.qapil.nebula-demo"
 version = scmVersion.version
-
