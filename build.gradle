@@ -13,7 +13,8 @@ scmVersion {
 	branchVersionCreator = [
 	        'dev': 'simple'
 	]
-
+	
+	
 	createReleaseCommit true
 }
 
