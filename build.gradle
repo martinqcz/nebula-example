@@ -10,6 +10,11 @@ scmVersion {
 		prefix = 'example'
 	}
 	versionCreator 'versionWithBranch'
+	branchVersionCreator = [
+	        'dev': 'simple'
+	]
+
+	createReleaseCommit true
 }
 
 group "com.qapil.nebula-demo"
