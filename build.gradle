@@ -15,7 +15,7 @@ scmVersion {
 	]
 	
 	
-	createReleaseCommit true
+//	createReleaseCommit true
 }
 
 group "com.qapil.nebula-demo"
