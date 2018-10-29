@@ -1,12 +1,11 @@
 plugins {
 	// id 'nebula.release' version '8.0.3'
-	id 'pl.allegro.tech.build.axion-release' version '1.9.3'
+	// id 'pl.allegro.tech.build.axion-release' version '1.9.3'
+	id 'pl.allegro.tech.build.axion-release' version '1.7.1'
 }
 
-group "com.qapil.nebula-demo"
-version = scmVersion.version
-
 scmVersion {
+	ignoreUncommittedChanges = false
 
 	// tag {
 	// 	prefix = 'example'
@@ -14,8 +13,6 @@ scmVersion {
 	// versionCreator 'versionWithBranch'
 }
 
-allprojects {
-	if (tasks.findByName("publish")) {
-		tasks.publish.dependsOn verifyRelease
-	}
-}
+group "com.qapil.nebula-demo"
+version = scmVersion.version
+
